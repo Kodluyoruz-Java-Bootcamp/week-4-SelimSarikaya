@@ -1,0 +1,302 @@
+{
+	"info": {
+		"_postman_id": "795e7281-c395-4e3b-8d89-f4fb2f6756fa",
+		"name": "emlakcepte",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24884009"
+	},
+	"item": [
+		{
+			"name": "localhost:9090/users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"selim\",\n    \"email\":\"selim@gmail.com\",\n    \"password\": \"12345\",\n    \"type\" : \"INDIVIDUAL\"\n\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/users",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/users",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/users/selim@gmail.com",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/users/selim@gmail.com",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"users",
+						"selim@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userId\": 25,\r\n    \"amount\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/products",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/products",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/realtyes",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"no\": 125,\n    \"title\":\"kurumsala kiralık\",\n    \"province\" :\"izmir\",\n    \"userId\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/realtyes",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"realtyes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/realtyes/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/realtyes/",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"realtyes",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/realtyes/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/realtyes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"realtyes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/realtyes/status",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"no\": 125\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/realtyes/status",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"realtyes",
+						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/banners",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ilanNo\" : \"125\",\n    \"adet\" : 1,\n    \"telNo1\": \"5395393939\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/banners",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"banners"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/banners",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/banners",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"banners"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/payments",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \r\n    \"amount\": \"1\"\r\n\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9090/payments",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:9090/payments",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:9090/payments",
+					"host": [
+						"localhost"
+					],
+					"port": "9090",
+					"path": [
+						"payments"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
